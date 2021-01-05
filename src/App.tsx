@@ -14,6 +14,14 @@ interface IOrden {
   done: boolean;
 }
 
+interface ILogan {
+  mesa: number;
+  personas: number;
+  comida: string;
+  bebida: string;
+  done: boolean;
+}
+
 function App(): JSX.Element {
   const [orden, setOrden] = useState<IOrden>({
     mesa: 0,
